@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxim Sidorenko</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon icon-list__icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon icon-list__icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Krub:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Handlee', cursive; -->
+
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container header__container">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use href="./image/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </div>
+        <nav class="menu" data-menu>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="link menu__link" href="#home">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#about">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#skills">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-button" type="button" data-menu-button>
+          <span class="burger-menu"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            Hello there! I’m Maxim, Front end developer
+          </h1>
+          <picture>
+            <img
+              class="hero__img"
+              src="./image/hero/hero.jpg"
+              alt="developer photo"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="title">About</h2>
+          <p class="text">
+            Меня зовут Максим Сидоренко,и мне 26.Завершил курси GoIT где получил
+            базовые знания и расширял их в процессе обучения.Я люблю разбираться
+            в новых технологиях и применять их на практике.Черпаю знания из
+            блогов,подкастов и чтения документации,любимые - ‘Medium’ ,
+            ‘MDN’.Нравится работать в команде и создавать классный продукт.
+          </p>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="title">Portfolio</h2>
+          <ul class="card-set portfolio__list">
+            <li class="card-set__item portfolio__item">
+              <div class="portfolio__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./image/portfolio/britlex-min.jpg    1x,
+                      ./image/portfolio/britlex@2x-min.jpg 2x
+                    "
+                  />
+                  <img src="./image/portfolio/britlex-min.jpg" />
+                </picture>
+              </div>
+              <div class="portfolio__thumb">
+                <p class="subtitle">Britlex - fully responsive and adaptive</p>
+                <p class="text card__text">
+                  create with technologies: HTML, SCSS, JavaScript, Parcel,
+                  Swiper.
+                </p>
+                <ul class="icon-list">
+                  <li class="icon-list__item">
+                    <a
+                      href="https://github.com/kenobiwins/britlex"
+                      target="_blank"
+                    >
+                      <svg class="icon icon-list__icon">
+                        <use href="./image/symbol-defs.svg#icon-github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a
+                      href="https://kenobiwins.github.io/britlex"
+                      target="_blank"
+                    >
+                      <svg class="icon icon-list__icon">
+                        <use href="./image/symbol-defs.svg#icon-live"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card-set__item portfolio__item">
+              <div class="portfolio__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./image/portfolio/webStudio-min.jpg    1x,
+                      ./image/portfolio/webStudio@2x-min.jpg 2x
+                    "
+                  />
+                  <img src="./image/portfolio/webStudio-min.jpg" />
+                </picture>
+              </div>
+              <div class="portfolio__thumb">
+                <p class="subtitle">
+                  Web Studio - fully responsive and adaptive
+                </p>
+                <p class="text card__text">
+                  create with technologies: HTML, SCSS, JavaScript.
+                </p>
+                <ul class="icon-list">
+                  <li class="icon-list__item">
+                    <a
+                      href="https://github.com/kenobiwins/webStudio"
+                      target="_blank"
+                    >
+                      <svg class="icon icon-list__icon">
+                        <use href="./image/symbol-defs.svg#icon-github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a
+                      href="https://kenobiwins.github.io/webStudio"
+                      target="_blank"
+                    >
+                      <svg class="icon icon-list__icon">
+                        <use href="./image/symbol-defs.svg#icon-live"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card-set__item portfolio__item">
+              <div class="portfolio__img">
+                <picture>
+                  <source
+                    srcset="
+                      ./image/portfolio/iceCream-min.jpg    1x,
+                      ./image/portfolio/iceCream@2x-min.jpg 2x
+                    "
+                  />
+                  <img src="./image/portfolio/iceCream-min.jpg" />
+                </picture>
+              </div>
+              <div class="portfolio__thumb">
+                <p class="subtitle">
+                  Ice Cream - fully responsive and adaptive
+                </p>
+                <p class="text card__text">
+                  create with technologies: HTML, SCSS, JavaScript, Parcel,
+                  jquery, Animation.css.
+                </p>
+                <ul class="icon-list">
+                  <li class="icon-list__item">
+                    <a
+                      href="https://github.com/kenobiwins/team-project"
+                      target="_blank"
+                    >
+                      <svg class="icon icon-list__icon">
+                        <use href="./image/symbol-defs.svg#icon-github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list__item">
+                    <a
+                      href="https://kenobiwins.github.io/team-project"
+                      target="_blank"
+                    >
+                      <svg class="icon icon-list__icon">
+                        <use href="./image/symbol-defs.svg#icon-live"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script> -->
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script> -->
+    <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./js/header-transp.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

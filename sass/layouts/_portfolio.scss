@@ -1,0 +1,53 @@
+.portfolio {
+  @include section();
+
+  &__list {
+    --items: 1;
+    gap: 28px;
+    @include mq(tablet) {
+      --items: 2;
+    }
+    @include mq(desktop) {
+      --items: 3;
+    }
+  }
+  &__item {
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 22px;
+    border-top-left-radius: 0;
+  }
+  &__img {
+    margin-bottom: 24px;
+    border-radius: 22px;
+    border-top-left-radius: 0;
+  }
+  &__thumb {
+    padding: 6px;
+  }
+}
+.card__text {
+  margin-bottom: 24px;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+
+  color: var(--title-primary);
+
+  &__item {
+    transition: color var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    width: 52px;
+    height: 48px;
+  }
+}

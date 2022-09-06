@@ -1,0 +1,32 @@
+.hero {
+  @include section(80px);
+  @include mq(desktop) {
+    @include section(120px);
+  }
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+}
+.hero__title {
+  font-family: "Handlee", cursive;
+  color: var(--title-secondary);
+  @include mq(tablet) {
+    font-size: 55px;
+  }
+  @include mq(desktop) {
+    font-size: 82px;
+  }
+}
+.hero__img {
+  width: 140px;
+  border-radius: 50%;
+  box-shadow: 2px 0px 0px 0px #3796834d;
+  @include mq(tablet) {
+    width: 280px;
+  }
+  @include mq(desktop) {
+    width: 430px;
+  }
+}
