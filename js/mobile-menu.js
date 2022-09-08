@@ -19,4 +19,15 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
      });
+  // // close menu
+  //   var mobileMenuOutsideClick = function() {
+  //   $(document).click(function (e) {
+  //     var container = $("#data-menu, .js-fh5co-nav-toggle");
+  //     if (!container.is(e.target) && container.has(e.target).length === 0) {
+  //       if ( $('body').hasClass('is-open') ) {
+  //       $('body').removeClass('is-open');
+  //     }
+  //     }
+  //   });
+  // };
 })();
