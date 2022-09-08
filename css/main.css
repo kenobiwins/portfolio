@@ -489,6 +489,10 @@ body {
   height: 36px;
 }
 
+.contacts__text {
+  color: var(--background);
+}
+
 .contacts__link {
   display: flex;
   align-items: center;

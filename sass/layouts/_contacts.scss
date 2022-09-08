@@ -12,6 +12,10 @@
   height: 36px;
 }
 
+.contacts__text {
+  color: var(--background);
+}
+
 // =====
 .contacts__link {
   display: flex;
@@ -32,6 +36,7 @@
     transform-style: preserve-3d;
     transition: color var(--transition), transform var(--transition),
       background-color var(--transition);
+
     &::before {
       position: absolute;
       content: "";
