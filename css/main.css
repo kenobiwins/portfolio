@@ -483,6 +483,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .contact__list {
+    --items: 3;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .contacts__icon {
   width: 36px;

@@ -5,6 +5,19 @@
   gap: var(--indent);
   display: flex;
   flex-direction: column;
+  @include mq(desktop) {
+    --items: 3;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.contacts__item {
+  @include mq(desktop) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .contacts__icon {
