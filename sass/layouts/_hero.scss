@@ -11,7 +11,7 @@
 }
 .hero__title {
   font-family: "Handlee", cursive;
-  color: var(--title-secondary);
+  color: var(--title-primary);
   @include mq(tablet) {
     font-size: 55px;
   }

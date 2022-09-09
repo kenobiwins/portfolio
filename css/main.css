@@ -236,6 +236,7 @@ body {
   padding: 11px 0;
   border-bottom: 1px solid rgba(216, 195, 165, 0.4784313725);
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -352,7 +353,7 @@ body {
 
 .hero__title {
   font-family: "Handlee", cursive;
-  color: var(--title-secondary);
+  color: var(--title-primary);
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -409,20 +410,24 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 22px;
   border-top-left-radius: 0;
+  position: relative;
+  z-index: 1;
 }
 .portfolio__thumb {
   padding: 6px;
 }
 
 .card__text {
-  margin-bottom: 24px;
+  margin-bottom: 78px;
 }
 
 .icon-list {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: auto;
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
   color: var(--title-primary);
 }
 .icon-list__item {
@@ -524,11 +529,24 @@ body {
   border-radius: 0.75em;
   transition: color var(--transition), transform var(--transition), background-color var(--transition);
 }
+@media screen and (max-width: 767px) {
+  .contacts__link--butt {
+    width: 210px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts__link--butt {
+    width: 250px;
     transform-style: preserve-3d;
     position: relative;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contacts__link--butt {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
   .contacts__link--butt::before {
     position: absolute;
     content: "";
