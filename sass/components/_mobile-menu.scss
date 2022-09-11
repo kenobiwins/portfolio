@@ -22,7 +22,7 @@
   position: absolute;
   top: 51%;
   left: 0;
-  width: 22px;
+  width: 85%;
   height: 2px;
   border-radius: 4px;
   background-color: var(--menu-color);
@@ -58,7 +58,7 @@
 .is-open .burger-menu::after {
   background-color: var(--menu-color-accent);
   top: 0;
-  width: 10px;
+  width: 50%;
 }
 .is-open .burger-menu::before {
   transform: rotate(90deg);

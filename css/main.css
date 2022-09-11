@@ -113,7 +113,7 @@ body {
 }
 
 .text {
-  color: rgba(37, 78, 88, 0.6);
+  color: rgba(37, 78, 88, 0.8980392157);
   font-size: 16px;
   line-height: 1.375;
   font-weight: 400;
@@ -160,7 +160,7 @@ body {
   position: absolute;
   top: 51%;
   left: 0;
-  width: 22px;
+  width: 85%;
   height: 2px;
   border-radius: 4px;
   background-color: var(--menu-color);
@@ -195,7 +195,7 @@ body {
 .is-open .burger-menu::after {
   background-color: var(--menu-color-accent);
   top: 0;
-  width: 10px;
+  width: 50%;
 }
 
 .is-open .burger-menu::before {
