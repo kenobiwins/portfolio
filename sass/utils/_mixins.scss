@@ -28,12 +28,12 @@
   @if ($padding-top) {
     padding-top: $padding-top;
   } @else {
-    padding-top: 25px;
+    padding-top: 32px;
   }
   @if ($padding-bottom) {
     padding-bottom: $padding-bottom;
   } @else {
-    padding-bottom: 25px;
+    padding-bottom: 32px;
   }
 }
 

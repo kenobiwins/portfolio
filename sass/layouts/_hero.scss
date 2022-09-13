@@ -1,7 +1,7 @@
 .hero {
   @include section(80px);
   @include mq(desktop) {
-    @include section(120px);
+    @include section(100px);
   }
 }
 
@@ -11,12 +11,12 @@
 }
 .hero__title {
   font-family: "Handlee", cursive;
-  color: var(--title-primary);
+  color: var(--title-secondary);
   @include mq(tablet) {
-    font-size: 55px;
+    font-size: 49px;
   }
   @include mq(desktop) {
-    font-size: 82px;
+    font-size: 62px;
   }
 }
 .hero__img {

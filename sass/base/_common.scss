@@ -88,16 +88,19 @@ body {
   color: var(--title-primary);
   margin-bottom: 24px;
   @include fonts(22px, 28px, 500, 0.02em);
+  @include mq(desktop) {
+    @include fonts(26px, 30px);
+  }
 }
 
 .text {
   color: #254e58e5;
-  @include fonts(16px, 22px, 400);
+  @include fonts(18px, 22px, 400);
 
   @include mq(tablet) {
     @include fonts(20px, 26px);
   }
   @include mq(desktop) {
-    @include fonts(28px, 34px);
+    @include fonts(24px, 28px);
   }
 }

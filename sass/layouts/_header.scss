@@ -1,5 +1,5 @@
 .header {
-  padding: 11px 0;
+  padding: 6px 0;
   border-bottom: 1px solid #d8c3a57a;
   position: fixed;
   z-index: 100;
@@ -15,9 +15,7 @@
   }
   &__container {
     display: flex;
-    @media screen and(max-width:1199px) {
-      align-items: center;
-    }
+    align-items: center;
   }
 }
 .logo {
@@ -31,8 +29,8 @@
   height: 32px;
 
   @include mq(tablet) {
-    width: 64px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
   }
 }
 
@@ -51,8 +49,10 @@
     border-left: 1px solid #d8c3a57a;
     transition: transform var(--transition);
   }
-  @include mq(desktop) {
-    @include fonts(36px, 40px);
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    @include fonts(20px, 20px);
   }
 
   &.is-open {
@@ -77,7 +77,7 @@
   }
 }
 .menu__link {
-  padding: 12px 0 10px;
+  padding: 6px 0;
   transition: color var(--transition);
 
   &:hover,
